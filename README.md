@@ -20,7 +20,7 @@
     - SCSS
 ### Setup
   * Open your command
-  * Type "git clonehttps://github.com/ahmed-al-farouq/freeeze.git"
+  * Type "git clone https://github.com/ahmed-al-farouq/freeeze.git"
   * npm i
   * npm run start
 ### Run the app
