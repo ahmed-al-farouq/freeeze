@@ -34,6 +34,8 @@ nav{
     .menu-icons{  /*responsive menu icon*/
         display: none;
         cursor: pointer;
+        border: none;
+        outline: none;
         span{
             display: block;
             padding: 4px 25px;
