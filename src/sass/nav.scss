@@ -76,11 +76,15 @@ nav {
 
     @media only screen and (max-width: 1199.99px) {
         padding: 5px 25px;
-
+        position: relative;
         ul {
-            transform: translate(200px, 165px);
+            transform: translate(265px, 0);
             transition: transform 0.5s linear;
-
+            position: absolute;
+            top: 65px;
+            right: 0;
+            left: 0;
+            width: 100%;
             li {
                 display: none;
                 opacity: 0;
@@ -89,7 +93,7 @@ nav {
 
         ul.slide-left {
             z-index: 50;
-            transform: translate(0, 165px);
+            transform: translate(0, 0);
             flex-flow: column wrap;
             min-width: 165px;
             text-align: center;
