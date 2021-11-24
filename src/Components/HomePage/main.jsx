@@ -1,17 +1,15 @@
-import bg from '../../images/bg-home.jpg'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import bg from '../../images/bg-home.jpg';
 
-function Main (){
-    return(
-        <main>
-            <img src={bg} alt="bg"/>
-            <div>
-                <NavLink to="products">
-                    freeze delight
-                </NavLink>
-            </div>
-        </main>
-    )
-}
+const Main = () => (
+  <main>
+    <img src={bg} alt="bg" />
+    <div>
+      <NavLink to="products">
+        freeze delight
+      </NavLink>
+    </div>
+  </main>
+);
 
 export default Main;
