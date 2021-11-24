@@ -11,44 +11,44 @@ class Navbar extends Component {
     this.menuRef = React.createRef();
   }
 
-    menuIcons = () => {
-      this.iconRef1.current.classList.toggle('open');
-      this.iconRef2.current.classList.toggle('open');
-      this.iconRef3.current.classList.toggle('hidden');
-      this.menuRef.current.classList.toggle('slide-left');
-    }
+  menuIcons = () => {
+    this.iconRef1.current.classList.toggle('open');
+    this.iconRef2.current.classList.toggle('open');
+    this.iconRef3.current.classList.toggle('hidden');
+    this.menuRef.current.classList.toggle('slide-left');
+  }
 
-    render() {
-      return (
-        <nav>
-          <a href="#Home">
-            <img src={logo} alt="logo" width="135" />
-          </a>
-          <ul ref={this.menuRef}>
-            <li>
-              <NavLink exact to="/">home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">about</NavLink>
-            </li>
-            <li>
-              <NavLink to="/products">products</NavLink>
-            </li>
-            <li>
-              <NavLink to="/blog">blog</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact-us">contact us</NavLink>
-            </li>
-          </ul>
-          <button type="button" className="menu-icons" onClick={this.menuIcons}>
-            <span ref={this.iconRef1} />
-            <span ref={this.iconRef2} />
-            <span ref={this.iconRef3} />
-          </button>
-        </nav>
-      );
-    }
+  render() {
+    return (
+      <nav>
+        <a href="#Home">
+          <img src={logo} alt="logo" width="135" />
+        </a>
+        <ul ref={this.menuRef}>
+          <li>
+            <NavLink exact to="/" onClick={this.menuIcons}>home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" onClick={this.menuIcons}>about</NavLink>
+          </li>
+          <li>
+            <NavLink to="/products" onClick={this.menuIcons}>products</NavLink>
+          </li>
+          <li>
+            <NavLink to="/blog" onClick={this.menuIcons}>blog</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact-us" onClick={this.menuIcons}>contact us</NavLink>
+          </li>
+        </ul>
+        <button type="button" className="menu-icons" onClick={this.menuIcons}>
+          <span ref={this.iconRef1} />
+          <span ref={this.iconRef3} />
+          <span ref={this.iconRef2} />
+        </button>
+      </nav>
+    );
+  }
 }
 
 export default Navbar;
