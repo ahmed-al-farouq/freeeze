@@ -1,16 +1,18 @@
-ul.icons{
+ul.icons {
     display: flex;
     margin: 0;
-    background-color: rgb(200, 193 ,13);
+    background-color: rgb(200, 193, 13);
     padding: 45px 80px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    li{
+
+    li {
         list-style-type: none;
         margin: 5px 0;
         width: 20%;
-        &:nth-of-type(1) a{
+
+        &:nth-of-type(1) a {
             background: url("../../images/icons.png") no-repeat;
             background-position: -2px -372px;
             display: block;
@@ -19,7 +21,8 @@ ul.icons{
             padding: 0;
             width: 80px;
         }
-        &:nth-of-type(2) a{
+
+        &:nth-of-type(2) a {
             background: url("../../images/icons.png") no-repeat;
             background-position: -2px -418px;
             display: block;
@@ -28,7 +31,8 @@ ul.icons{
             padding: 0;
             width: 80px;
         }
-        &:nth-of-type(3) a{
+
+        &:nth-of-type(3) a {
             background: url("../../images/icons.png") no-repeat;
             background-position: 3px -279px;
             display: block;
@@ -37,7 +41,8 @@ ul.icons{
             padding: 0;
             width: 80px;
         }
-        &:nth-of-type(4) a{
+
+        &:nth-of-type(4) a {
             background: url("../../images/icons.png") no-repeat;
             background-position: 0 -325px;
             display: block;
@@ -46,16 +51,18 @@ ul.icons{
             padding: 0;
             width: 80px;
         }
-        h3{
+
+        h3 {
             color: rgb(255, 255, 255);
             font: normal normal normal 20px/20px lato-regular-webfont;
             text-align: center;
             text-transform: uppercase;
         }
     }
-    @media screen and (max-width: 991.99px){
-        li{
+
+    @media screen and (max-width: 991.99px) {
+        li {
             width: 100%;
         }
     }
-} 
+}

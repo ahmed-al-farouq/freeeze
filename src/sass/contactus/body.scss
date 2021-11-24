@@ -1,145 +1,176 @@
-section.contact-us-body{
+section.contact-us-body {
     width: 100%;
-    div.location{
+
+    div.location {
         width: 100%;
-        background: url('../../images/map.jpg') no-repeat center top rgb(181, 170 ,173);
+        background: url('../../images/map.jpg') no-repeat center top rgb(181, 170, 173);
         padding: 20px 0;
-        .location-content{
+
+        .location-content {
             display: flex;
             flex-wrap: wrap;
             width: 50%;
             padding: 20px;
             margin: auto;
             background: url('../../images/bg-transparent.png') repeat;
-            img{
+
+            img {
                 margin: auto;
             }
-            .location-text{
+
+            .location-text {
                 margin-left: 10px;
-                h2{
-                    color: rgb(203 ,51 ,98);
+
+                h2 {
+                    color: rgb(203, 51, 98);
                     font: normal normal normal 24px/ 24px lato-regular-webfont;
                     width: 510px;
                 }
-                p{
-                    color: rgb(122 ,102, 102);
+
+                p {
+                    color: rgb(122, 102, 102);
                     font: normal normal normal 14px/ 24px roboto-regular-webfont;
                     width: 510px;
                 }
             }
         }
     }
-    div.body-footer{
+
+    div.body-footer {
         display: flex;
         flex-wrap: wrap;
         width: 70%;
         margin: 50px auto 90px auto;
-        form{
-            fieldset{
+
+        form {
+            fieldset {
                 border: none;
                 display: flex;
                 flex-direction: column;
-                legend{
+
+                legend {
                     color: rgb(203, 51, 98);
                     font: normal normal normal 24px/ 24px lato-regular-webfont;
                     margin-bottom: 30px;
                 }
-                .sr-only{
+
+                .sr-only {
                     display: none;
                 }
-                input{
+
+                input {
                     background: none;
                     border: 1px solid rgb(182, 173, 176);
-                    color: rgb(122, 102 ,102);
+                    color: rgb(122, 102, 102);
                     font: normal normal normal 14px/ 38px lato-regular-webfont;
                     height: 38px;
                     margin: 0 0 8px;
                     padding: 0 0 0 10px;
                     width: 548px;
                     overflow: auto;
-                    &#submit{
+
+                    &#submit {
                         background: none;
-                        border: 2px solid rgb(197, 171 ,180);
-                        color: rgb(165 ,131 ,142);
+                        border: 2px solid rgb(197, 171, 180);
+                        color: rgb(165, 131, 142);
                         cursor: pointer;
                         font: normal normal normal 16px/ 36px lato-bold-webfont;
-                        height: 40px;                    
+                        height: 40px;
                         padding: 0;
                         margin: 10px auto;
                         text-align: center;
                         text-transform: uppercase;
                         width: 141px;
                         transition: background-color .3s ease-in-out;
-                        &:hover{
+
+                        &:hover {
                             background-color: rgb(200, 193, 13);
                             color: white;
                             border: none;
                         }
                     }
                 }
-                #textarea{
-                        height: 270px;
-                        padding: 7px 0 0 10px;
-                        margin: 15px 1px;
-                        resize: none;
-                        text-align: left;
-                        width: 548px;
-                    }
+
+                #textarea {
+                    height: 270px;
+                    padding: 7px 0 0 10px;
+                    margin: 15px 1px;
+                    resize: none;
+                    text-align: left;
+                    width: 548px;
+                }
             }
         }
-        aside{
-            background-color: rgb(239 ,237, 238);
+
+        aside {
+            background-color: rgb(239, 237, 238);
             padding: 0 30px;
             width: 210px;
             height: 208px;
-            h2{
-                color: rgb(203 ,51 ,98);
+
+            h2 {
+                color: rgb(203, 51, 98);
                 font: normal normal normal 24px/ 24px lato-regular-webfont;
             }
-            p{
-                color: rgb(122 ,102, 102);
+
+            p {
+                color: rgb(122, 102, 102);
                 font: normal normal normal 14px/ 24px roboto-regular-webfont;
             }
         }
     }
-    @media screen and (max-width: 785.99px){
-        div.location{
-            .location-content{
+
+    @media screen and (max-width: 785.99px) {
+        div.location {
+            .location-content {
                 width: 80%;
-                .location-text{
-                    h2,p{
+
+                .location-text {
+
+                    h2,
+                    p {
                         width: 280px;
                     }
                 }
             }
         }
     }
-    @media screen and (min-width: 786px) and (max-width: 991.99px){
-        div.location{
-            .location-content{
+
+    @media screen and (min-width: 786px) and (max-width: 991.99px) {
+        div.location {
+            .location-content {
                 width: 70%;
-                .location-text{
-                    h2,p{
+
+                .location-text {
+
+                    h2,
+                    p {
                         width: 400px;
                     }
                 }
             }
         }
     }
-    @media screen  and (max-width: 991.99px){
-        div.body-footer{
+
+    @media screen and (max-width: 991.99px) {
+        div.body-footer {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
-            form{
+
+            form {
                 margin: auto;
-                fieldset{
-                    input, #textarea{
+
+                fieldset {
+
+                    input,
+                    #textarea {
                         width: 90%;
                     }
                 }
             }
-            aside{
+
+            aside {
                 margin: auto;
             }
         }
